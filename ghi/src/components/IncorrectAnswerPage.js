@@ -46,9 +46,7 @@ const IncorrectAnswerPage = () => {
 					</Row>
 				</Container>
 			</Card.Body>
-			<Card.Footer id="card-footer" className="text-muted">
-				Question 1 out of 1
-			</Card.Footer>
+			<Card.Footer id="card-footer">Score:</Card.Footer>
 		</Card>
 	);
 };

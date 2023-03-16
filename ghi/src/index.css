@@ -20,13 +20,13 @@ code {
 
 /* Main card in QuestionPage.js */
 #main-card {
-	background-color: whitesmoke;
+	background-color: rgb(228, 225, 225);
 }
 
 /* Card Header and Card Footer Styling */
 #card-header,
 #card-footer {
-	background-color: lightblue;
+	background-color: rgb(140, 218, 242);
 }
 
 /* Buttons Styling */
