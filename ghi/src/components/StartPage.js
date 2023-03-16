@@ -39,7 +39,6 @@ const StartPage = () => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-
 		setStartedQuiz(true);
 	};
 

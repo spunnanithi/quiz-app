@@ -6,9 +6,12 @@ import useFetch from "../hooks/useFetch";
 import QuestionSet from "./QuestionSet";
 import CorrectAnswerPage from "./CorrectAnswerPage";
 import IncorrectAnswerPage from "./IncorrectAnswerPage";
+import StopButton from "./StopButton";
+import ResultPage from "./ResultPage";
 
 const QuestionPage = (props) => {
 	const [isCorrect, setIsCorrect] = useState(null);
+	const [isStopped, setIsStopped] = useState(null);
 	const [category, setCategory] = useState("");
 	const [question, setQuestion] = useState("");
 	const [difficulty, setDifficulty] = useState("");
@@ -39,10 +42,19 @@ const QuestionPage = (props) => {
 		[setIsCorrect]
 	);
 
+	const wrapperSetIsStoppedState = useCallback(
+		(bool) => {
+			setIsStopped(bool);
+		},
+		[setIsStopped]
+	);
+
 	if (isCorrect === true) {
 		return <CorrectAnswerPage />;
 	} else if (isCorrect === false) {
 		return <IncorrectAnswerPage />;
+	} else if (isStopped) {
+		return <ResultPage />;
 	}
 	return (
 		<>
@@ -61,10 +73,16 @@ const QuestionPage = (props) => {
 							isCorrectSetter={wrapperSetIsCorrectState}
 							isCorrect={isCorrect}
 						/>
+						<Row>
+							<StopButton
+								isStoppedSetter={wrapperSetIsStoppedState}
+								isStopped={isStopped}
+							/>
+						</Row>
 					</Container>
 				</Card.Body>
 				<Card.Footer id="card-footer" className="text-muted">
-					Question 1 of out {data.length}
+					Question 1 out of 1
 				</Card.Footer>
 			</Card>
 		</>

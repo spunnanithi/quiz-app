@@ -47,7 +47,7 @@ const CorrectAnswerPage = () => {
 				</Container>
 			</Card.Body>
 			<Card.Footer id="card-footer" className="text-muted">
-				Question 1 of out 1
+				Question 1 out of 1
 			</Card.Footer>
 		</Card>
 	);

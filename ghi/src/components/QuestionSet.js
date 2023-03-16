@@ -48,7 +48,7 @@ const QuestionSet = (props) => {
 	var shuffledNumbers = shuffle(numbers);
 
 	return (
-		<Row>
+		<Row className="mb-4">
 			<Col>
 				<Stack gap={5} className="col-md-7 mx-auto">
 					<Button
