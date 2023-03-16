@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
-import Container from "react-bootstrap/esm/Container";
 import Stack from "react-bootstrap/Stack";
 
 const QuestionSet = (props) => {

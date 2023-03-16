@@ -1,10 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/esm/Row";
-import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
-import Stack from "react-bootstrap/Stack";
 import useFetch from "../hooks/useFetch";
 import QuestionSet from "./QuestionSet";
 import CorrectAnswerPage from "./CorrectAnswerPage";

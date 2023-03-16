@@ -4,7 +4,6 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
-import Stack from "react-bootstrap/Stack";
 import QuestionPage from "./QuestionPage";
 
 const CorrectAnswerPage = () => {
