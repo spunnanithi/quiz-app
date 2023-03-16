@@ -25,7 +25,7 @@ const IncorrectAnswerPage = () => {
 							<Card.Title>Incorrect! Better luck next time!</Card.Title>
 						</Col>
 					</Row>
-					<Row className="mt-2 mb-2">
+					<Row className="mt-3 mb-3">
 						<Col>
 							<img
 								src="https://i.kym-cdn.com/photos/images/facebook/000/995/349/9c9.jpg"

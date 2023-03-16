@@ -7,16 +7,19 @@ import QuestionSet from "./QuestionSet";
 import CorrectAnswerPage from "./CorrectAnswerPage";
 import IncorrectAnswerPage from "./IncorrectAnswerPage";
 
-const QuestionPage = () => {
+const QuestionPage = (props) => {
 	const [isCorrect, setIsCorrect] = useState(null);
 	const [category, setCategory] = useState("");
 	const [question, setQuestion] = useState("");
 	const [difficulty, setDifficulty] = useState("");
 
+	const categoryDropdown = props.categoryDropdown;
+	const numberOfQuestions = props.numberOfQuestions;
+
 	const data = useFetch(
-		"https://the-trivia-api.com/api/questions?categories=society_and_culture,science,sport_and_leisure,music,history,general_knowledge,food_and_drink,film_and_tv&limit=1"
+		"https://the-trivia-api.com/api/questions?categories=arts_and_literature,film_and_tv,food_and_drink,general_knowledge,history,geography,music,science,society_and_culture,sport_and_leisure&limit=1"
 	);
-	console.log(data[0]);
+	console.log(data);
 
 	useEffect(() => {
 		data.map((questionObj) => {

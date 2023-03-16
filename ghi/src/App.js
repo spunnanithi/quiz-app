@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import QuestionPage from "./components/QuestionPage";
+import StartPage from "./components/StartPage";
 import { useState } from "react";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 				fluid
 				className="vh-100 vw-100 d-flex align-items-center justify-content-center"
 				id="main-page">
-				<QuestionPage />
+				<StartPage />
 			</Container>
 		</>
 	);
