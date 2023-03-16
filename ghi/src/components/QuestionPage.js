@@ -17,7 +17,7 @@ const QuestionPage = () => {
 	const [difficulty, setDifficulty] = useState("");
 
 	const data = useFetch(
-		"https://the-trivia-api.com/api/questions?limit=1&categories=science,history"
+		"https://the-trivia-api.com/api/questions?categories=society_and_culture,science,sport_and_leisure,music,history,general_knowledge,food_and_drink,film_and_tv&limit=1"
 	);
 	console.log(data[0]);
 
@@ -25,7 +25,9 @@ const QuestionPage = () => {
 		data.map((questionObj) => {
 			setCategory(questionObj.category);
 			setQuestion(questionObj.question);
-			setDifficulty(questionObj.difficulty.toUpperCase());
+			if (questionObj.difficulty) {
+				setDifficulty(questionObj.difficulty.toUpperCase());
+			}
 		});
 	}, [data]);
 
