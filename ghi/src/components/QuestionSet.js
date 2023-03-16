@@ -54,17 +54,19 @@ const QuestionSet = (props) => {
 			<Col>
 				<Stack gap={5} className="col-md-7 mx-auto">
 					<Button
+						id="buttons"
 						value={answers[shuffledNumbers[0]]}
 						onClick={handleCorrectAnswer}
 						size="lg"
-						variant="primary">
+						variant="info">
 						{answers[shuffledNumbers[0]]}
 					</Button>
 					<Button
+						id="buttons"
 						value={answers[shuffledNumbers[1]]}
 						onClick={handleCorrectAnswer}
 						size="lg"
-						variant="primary">
+						variant="info">
 						{answers[shuffledNumbers[1]]}
 					</Button>
 				</Stack>
@@ -72,17 +74,19 @@ const QuestionSet = (props) => {
 			<Col>
 				<Stack gap={5} className="col-md-7 mx-auto">
 					<Button
+						id="buttons"
 						value={answers[shuffledNumbers[2]]}
 						onClick={handleCorrectAnswer}
 						size="lg"
-						variant="primary">
+						variant="info">
 						{answers[shuffledNumbers[2]]}
 					</Button>
 					<Button
+						id="buttons"
 						value={answers[shuffledNumbers[3]]}
 						onClick={handleCorrectAnswer}
 						size="lg"
-						variant="primary">
+						variant="info">
 						{answers[shuffledNumbers[3]]}
 					</Button>
 				</Stack>

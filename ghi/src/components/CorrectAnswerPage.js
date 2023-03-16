@@ -37,9 +37,10 @@ const CorrectAnswerPage = () => {
 					<Row>
 						<Col>
 							<Button
+								id="buttons"
 								onClick={handleNextQuestionButton}
 								size="lg"
-								variant="primary">
+								variant="info">
 								Next Question
 							</Button>
 						</Col>
